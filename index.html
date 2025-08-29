@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IB-ACIO-CA Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0d3b66 0%, #1e6ea7 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+        
+        header {
+            background: #0d3b66;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .intro p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #1e6ea7;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card h3 {
+            color: #0d3b66;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #0d3b66;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #1e6ea7;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>IB-ACIO-CA Documentation</h1>
+            <p class="subtitle">Comprehensive Resources and Class Materials</p>
+        </header>
+        
+        <div class="content">
+            <div class="intro">
+                <p>Welcome to the IB-ACIO-CA documentation portal. This site contains class materials, documents, and resources for your study and reference.</p>
+            </div>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>Class Materials</h3>
+                    <p>Access comprehensive class notes and learning materials for your courses.</p>
+                    <a href="class1.html" class="btn">View Class 1</a>
+                    <a href="class2.html" class="btn">View Class 2</a>
+                    <a href="class3.html" class="btn">View Class 3</a>
+                    <a href="class5.html" class="btn">View Class 5</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Documents</h3>
+                    <p>Important documents and reference materials for your studies.</p>
+                    <a href="document1.html" class="btn">Document 1</a>
+                    <a href="document2.html" class="btn">Document 2</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Repository Info</h3>
+                    <p>This site is hosted on GitHub Pages with HTML as the primary language.</p>
+                    <p><strong>Last Updated:</strong> 5 minutes ago</p>
+                    <a href="https://github.com/your-username/IB-ACIO-CA" class="btn">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>IB-ACIO-CA &copy; 2023. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
