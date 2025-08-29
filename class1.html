@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>IB ACIO 2025 Current Affairs — Part 1 (Jan–Aug): Defence and More</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <style>
+    /* ===== VARIABLES ===== */
+    :root {
+      --ink: #0f172a;
+      --muted: #475569;
+      --accent: #2563eb;
+      --ok: #059669;
+      --bad: #dc2626;
+      --bg: #f8fafc;
+    }
+    
+    /* ===== BASE STYLES ===== */
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+    
+    /* ===== HEADER & NAVIGATION ===== */
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 5;
+    }
+    
+    nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      padding: 12px 16px;
+      flex-wrap: wrap;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+      padding: 6px 10px;
+      border-radius: 8px;
+    }
+    
+    nav a.active, nav a:hover {
+      color: #fff;
+      background: var(--accent);
+    }
+    
+    /* ===== MAIN CONTENT ===== */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 16px 80px;
+    }
+    
+    h1 {
+      font-size: 1.8rem;
+      margin: 8px 0 4px;
+    }
+    
+    h2 {
+      font-size: 1.35rem;
+      margin: 28px 0 10px;
+    }
+    
+    h3 {
+      font-size: 1.05rem;
+      margin: 22px 0 10px;
+      color: var(--muted);
+    }
+    
+    /* ===== COMPONENTS ===== */
+    .pill {
+      display: inline-block;
+      font-size: .8rem;
+      color: #334155;
+      background: #e2e8f0;
+      padding: 2px 8px;
+      border-radius: 999px;
+      margin-left: 8px;
+    }
+    
+    .banner {
+      background: #fff7ed;
+      color: #9a3412;
+      border: 1px solid #fed7aa;
+      padding: 10px 12px;
+      border-radius: 10px;
+      margin: 10px 0 18px;
+    }
+    
+    .card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 16px;
+      margin: 14px 0;
+    }
+    
+    ul, ol {
+      padding-left: 20px;
+    }
+    
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+    
+    @media (min-width: 860px) {
+      .grid.cols-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    /* ===== QUESTION COMPONENTS ===== */
+    .question {
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 12px;
+      margin: 12px 0;
+      background: #fff;
+    }
+    
+    .question p {
+      margin: 0 0 8px;
+      font-weight: 600;
+    }
+    
+    .choices label {
+      display: block;
+      padding: 6px 8px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    
+    .choices input {
+      margin-right: 8px;
+    }
+    
+    .feedback {
+      margin-top: 8px;
+      font-weight: 700;
+    }
+    
+    .ok {
+      color: var(--ok);
+    }
+    
+    .bad {
+      color: var(--bad);
+    }
+    
+    .explain {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: .95rem;
+      display: none;
+    }
+    
+    .row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    
+    input[type="text"] {
+      padding: 8px 10px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      min-width: 240px;
+    }
+    
+    button {
+      background: var(--accent);
+      color: #fff;
+      border: 0;
+      padding: 7px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    
+    button.secondary {
+      background: #0ea5e9;
+    }
+    
+    .note {
+      font-size: .95rem;
+      color: var(--muted);
+    }
+    
+    /* ===== MISC ELEMENTS ===== */
+    footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 18px 16px 40px;
+      color: var(--muted);
+    }
+    
+    .tag {
+      font-size: .7rem;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      color: #64748b;
+    }
+    
+    .hl {
+      background: #fef9c3;
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+    
+    .kicker {
+      font-size: .85rem;
+      color: #64748b;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER SECTION -->
+  <header>
+    <nav aria-label="Course navigation">
+		<strong>IB ACIO 2025 Current Affairs</strong>
+		<a class="active" href="#">Part 1</a>
+		<a href="class2.html">Part 2</a>
+		<a href="class3.html">Part 3</a>
+		<a href="class4.html">Part 4</a>
+		<a href="class5.html">Part 5</a>
+		<span class="pill">English</span>
+	</nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="banner">
+      This is the complete and finalized Part 1 page. Once you review it, send Part 2 and I'll build the next page.
+    </div>
+
+    <h1>Part 1: Defence, exercises, ships, missiles, and key updates</h1>
+    <p class="note">Coverage window: January to 20 August (as compiled). In IB ACIO, Current Affairs typically carries ~20 questions; defence often contributes 3-4 directly, with more embedded in GS.</p>
+
+    <!-- BIG PICTURE SECTION -->
+    <section class="card">
+      <h2>Big picture</h2>
+      <ul>
+        <li><strong>Exam weight:</strong> Current Affairs ~20 questions; defence alone often yields 3-4 direct questions.</li>
+        <li><strong>This part covers:</strong> Defence exercises, Indian Navy ships and projects, achievements/equipment, missiles, and signature events.</li>
+      </ul>
+    </section>
+
+    <!-- AERO INDIA SECTION -->
+    <section class="card">
+      <h2>Aero India and high-value tech</h2>
+      <div class="grid cols-2">
+        <div>
+          <h3>Aero India (Yelahanka AFS, Bengaluru)</h3>
+          <ul>
+            <li><strong>Host:</strong> Yelahanka Air Force Station, Bengaluru.</li>
+            <li><strong>5th-gen aircraft displayed:</strong> F-35 (USA) and Su-57 (Russia).</li>
+            <li><strong>India's status:</strong> No indigenous 5th-gen fighter in service yet; AMCA under development.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Counter-drone advances</h3>
+          <ul>
+            <li><strong>Laser counter-UAS:</strong> India counted as 4th nation after the USA, China, Russia.</li>
+            <li><strong>Nagastra:</strong> Loitering "suicide" munition.</li>
+            <li><strong>Indrajaal:</strong> Anti-drone defence grid concept for swarm threats.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Quick check</h3>
+      <div class="question" data-qid="a1">
+        <p>Which base hosted Aero India in this cycle?</p>
+        <div class="choices">
+          <label><input type="radio" name="a1" /> Hindon AFS, Ghaziabad</label>
+          <label><input type="radio" name="a1" /> Tambaram AFS, Chennai</label>
+          <label><input type="radio" name="a1" data-correct="true" /> Yelahanka AFS, Bengaluru</label>
+          <label><input type="radio" name="a1" /> Lohegaon AFS, Pune</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">Aero India is traditionally hosted at Yelahanka AFS, enabling large-scale flying displays and static exhibits.</div>
+      </div>
+      
+      <div class="question" data-qid="a2">
+        <p>India currently operates an indigenous 5th-generation fighter.</p>
+        <div class="choices">
+          <label><input type="radio" name="a2" /> True</label>
+          <label><input type="radio" name="a2" data-correct="true" /> False</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">No indigenous 5th-gen fighter is in service yet; AMCA is under development while MWF/Tejas Mk2 progress.</div>
+      </div>
+      
+      <div class="question" data-qid="a3">
+        <p>Fill in: India is the <span class="hl">____</span> nation to field laser counter-drone capability (after the USA, China, and Russia).</p>
+        <div class="row">
+          <input type="text" placeholder="Your answer" data-answer="4th|fourth" />
+          <button class="check-fill">Check</button>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">Laser DEW aids rapid, low-cost engagements against swarms, complementing kinetic counter-UAS options.</div>
+      </div>
+    </section>
+
+    <!-- DEFENCE EXERCISES SECTION -->
+    <section class="card">
+      <h2>Defence exercises</h2>
+      <div class="grid cols-2">
+        <div>
+          <h3>India-Mongolia</h3>
+          <ul>
+            <li><strong>Khan Quest:</strong> In Mongolia; Kumaon Regiment participated.</li>
+            <li><strong>Nomadic Elephant:</strong> In Mongolia; 17th edition noted.</li>
+          </ul>
+          
+          <h3>India-France</h3>
+          <ul>
+            <li><strong>Shakti:</strong> Army; La Cavalerie; 8th edition.</li>
+            <li><strong>Varuna:</strong> Naval, off Visakhapatnam; INS Vikrant participated.</li>
+            <li><strong>La Perouse:</strong> Multinational (France-led); INS Mumbai took part.</li>
+          </ul>
+          
+          <h3>India-Japan</h3>
+          <ul>
+            <li><strong>Dharma Guardian:</strong> Army; hosted in Japan.</li>
+            <li><strong>Veer Guardian:</strong> Bilateral air exercise.</li>
+          </ul>
+          
+          <h3>India-Maldives</h3>
+          <ul>
+            <li><strong>Ekuverin:</strong> Name means "friends"; recurring bilateral exercise.</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3>India-Singapore</h3>
+          <ul>
+            <li><strong>BOLD Kurukshetra:</strong> Army bilateral.</li>
+            <li><strong>SIMBEX:</strong> Naval; INS Satpura (Shivalik-class), INS Delhi, INS Kiltan, and INS Shakti took part.</li>
+          </ul>
+          
+          <h3>India-Uzbekistan</h3>
+          <ul>
+            <li><strong>Dustlik:</strong> In Pune; 6th edition.</li>
+          </ul>
+          
+          <h3>India-Bangladesh</h3>
+          <ul>
+            <li><strong>Bongosagar:</strong> 6th edition naval cooperation exercise.</li>
+          </ul>
+          
+          <h3>India-Russia</h3>
+          <ul>
+            <li><strong>INDRA:</strong> 14th edition; INS Rana, INS Kuthar, and a P-8I participated.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid cols-2">
+        <div>
+          <h3>USA and multinationals</h3>
+          <ul>
+            <li><strong>Sea Dragon (Guam):</strong> Multinational ASW; Indian participation noted.</li>
+            <li><strong>"Tiger" cluster:</strong> Tiger Triumph (tri-service) aligns with India-USA amphibious cooperation.</li>
+            <li><strong>Desert Flag:</strong> IAF participation alongside UAE focus; MiG-29 and Jaguar fielded.</li>
+          </ul>
+          
+          <h3>Egypt and Sri Lanka</h3>
+          <ul>
+            <li><strong>Cyclone:</strong> With Egypt; hosted in Rajasthan.</li>
+            <li><strong>SLINEX:</strong> With Sri Lanka; Indian participation highlighted.</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3>High-readiness drills</h3>
+          <ul>
+            <li><strong>Operational Readiness Exercise (OREx):</strong> Large maritime-centric drill with Navy, Air Force, Army, Coast Guard.</li>
+            <li><strong>PASSEX with Greece:</strong> Indian participation via INS Tarkash; Greece also hosted "Iniochos" where India observed cycles.</li>
+          </ul>
+          
+          <h3>Memory traps</h3>
+          <ul>
+            <li><strong>KAZIND ↔ Kazakhstan</strong>, <strong>Khanjar ↔ Kyrgyzstan</strong> (don't swap).</li>
+            <li><strong>Surya Kiran:</strong> India-Nepal; 18th edition; hosted in Nepal; Kumaon Regiment noted.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Quick check</h3>
+      <div class="question" data-qid="ex1">
+        <p>"Ekuverin" is an exercise between India and which country?</p>
+        <div class="choices">
+          <label><input type="radio" name="ex1" /> Sri Lanka</label>
+          <label><input type="radio" name="ex1" data-correct="true" /> Maldives</label>
+          <label><input type="radio" name="ex1" /> Singapore</label>
+          <label><input type="radio" name="ex1" /> Indonesia</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">Ekuverin literally means "friends" in Dhivehi; it's the India-Maldives bilateral exercise.</div>
+      </div>
+      
+      <div class="question" data-qid="ex2">
+        <p>Fill in: "KAZIND" pairs India with <span class="hl">____</span>, while "Khanjar" pairs India with <span class="hl">____</span>.</p>
+        <div class="row">
+          <input type="text" placeholder="First country" data-answer="Kazakhstan" />
+          <input type="text" placeholder="Second country" data-answer="Kyrgyzstan" />
+          <button class="check-fill">Check</button>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">Kazakhstan (KAZIND) vs. Kyrgyzstan (Khanjar) is a common trap—lock it in.</div>
+      </div>
+      
+      <div class="question" data-qid="ex3">
+        <p>"Varuna" is a naval exercise between India and which nation?</p>
+        <div class="choices">
+          <label><input type="radio" name="ex3" data-correct="true" /> France</label>
+          <label><input type="radio" name="ex3" /> Japan</label>
+          <label><input type="radio" name="ex3" /> Australia</label>
+          <label><input type="radio" name="ex3" /> UAE</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">India-France hold two signature exercises: Varuna (naval) and Shakti (army).</div>
+      </div>
+    </section>
+
+    <!-- INDIAN NAVY SHIPS SECTION -->
+    <section class="card">
+      <h2>Indian Navy ships, projects, ports</h2>
+
+      <h3>Talwar-class and related batches</h3>
+      <ul>
+        <li><strong>Batch 1:</strong> Talwar, Trishul, Tabar</li>
+        <li><strong>Batch 2:</strong> Teg, Tarkash, Trikand</li>
+        <li><strong>Batch 3:</strong> Tushil, Tamal (flagged as "last from abroad" before full indigenous ramp-up)</li>
+        <li><strong>Batch 4 (India build):</strong> Triput, Tavasya (by Goa Shipyard Ltd.)</li>
+        <li><strong>INS Tarkash:</strong> PASSEX with Greece; Talwar-class.</li>
+      </ul>
+
+      <div class="grid cols-2">
+        <div>
+          <p class="tag">Project 17A – Nilgiri-class frigates</p>
+          <ul>
+            <li>INS Nilgiri, Mahendragiri, Taragiri, Udaygiri, Dunagiri, Vindhyagiri, Hemgiri.</li>
+          </ul>
+          
+          <p class="tag">Project 15B – Visakhapatnam-class destroyers</p>
+          <ul>
+            <li>INS Visakhapatnam, Mormugao, Imphal, Surat.</li>
+          </ul>
+          
+          <p class="tag">Project 75 – Kalvari (Scorpene) submarines</p>
+          <ul>
+            <li>INS Kalvari, Khanderi, Karanj, Vela, Vagir, Vagsheer.</li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="tag">Key highlights</p>
+          <ul>
+            <li><strong>INS Varsha:</strong> New naval base coming up in Andhra Pradesh.</li>
+            <li><strong>INS Arnala:</strong> First indigenous ASW shallow water craft (GRSE & L&T).</li>
+            <li><strong>INS Guldar:</strong> Decommissioned; referenced for India's first underwater museum concept.</li>
+            <li><strong>Vizhinjam Port (Kerala):</strong> "MSC Irina," world's largest container ship, visited.</li>
+            <li><strong>Japanese CG ship Kojima:</strong> Port call at Chennai.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Quick check</h3>
+      <div class="question" data-qid="n1">
+        <p>Which Project corresponds to the Nilgiri-class frigates?</p>
+        <div class="choices">
+          <label><input type="radio" name="n1" /> Project 15B</label>
+          <label><input type="radio" name="n1" data-correct="true" /> Project 17A</label>
+          <label><input type="radio" name="n1" /> Project 18</label>
+          <label><input type="radio" name="n1" /> Project 75(I)</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">Project 17A follows P-17 (Shivalik) with stealthier, heavier Nilgiri-class frigates.</div>
+      </div>
+      
+      <div class="question" data-qid="n2">
+        <p>Fill in: <span class="hl">____</span> is the first indigenous ASW shallow water craft built with GRSE and L&T.</p>
+        <div class="row">
+          <input type="text" placeholder="Your answer" data-answer="INS Arnala|Arnala" />
+          <button class="check-fill">Check</button>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">INS Arnala leads the ASW-SWC series enhancing littoral submarine-hunting capability.</div>
+      </div>
+      
+      <div class="question" data-qid="n3">
+        <p>Which destroyer class includes INS Imphal?</p>
+        <div class="choices">
+          <label><input type="radio" name="n3" /> Kolkata-class</label>
+          <label><input type="radio" name="n3" data-correct="true" /> Visakhapatnam-class (Project 15B)</label>
+          <label><input type="radio" name="n3" /> Delhi-class</label>
+          <label><input type="radio" name="n3" /> Rajput-class</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">INS Imphal is the third ship of P-15B (Visakhapatnam-class), India's latest generation destroyers.</div>
+      </div>
+    </section>
+
+    <!-- DEFENCE ACHIEVEMENTS SECTION -->
+    <section class="card">
+      <h2>Defence achievements and equipment</h2>
+      <div class="grid cols-2">
+        <div>
+          <h3>Systems and platforms</h3>
+          <ul>
+            <li><strong>Sheshnaag:</strong> Swarm drones; ~1000 km operational range figure cited in cycle.</li>
+            <li><strong>Kavach:</strong> Automatic Train Protection for rail collisions (do not confuse with <em>Kavacham</em>: fast weather forecasting in Wayanad, Kerala).</li>
+            <li><strong>SUR:</strong> ISRO's next-gen launch vehicle concept.</li>
+            <li><strong>Hansa & Yashas:</strong> Indian trainer aircraft platforms.</li>
+            <li><strong>eVTOL "Shunya":</strong> Urban air-taxi concept.</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3>Procurement and infra</h3>
+          <ul>
+            <li><strong>Rafale-M:</strong> Maritime variant expected for Navy by 2029 timeline.</li>
+            <li><strong>MiG-21:</strong> Phasing out; known as "Flying Coffin"/NATO "Fishbed".</li>
+            <li><strong>Facilities:</strong> BrahMos plant in Lucknow; Safran aircraft engine facility in Hyderabad; Volcano 155mm line in Ratnagiri.</li>
+            <li><strong>Polar Research Vessel:</strong> India's first indigenous PRV with Norway collaboration (GRSE among partners).</li>
+            <li><strong>COBRA Battalion (CRPF):</strong> Deployed in J&K; earlier jungle warfare focus.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Medical and soldier systems</h3>
+      <ul>
+        <li><strong>Bhishma Cub:</strong> Portable medical system; gifted to Maldives.</li>
+        <li><strong>Him Kavach:</strong> Extreme-cold gear enabling −60° to +20° operations.</li>
+        <li><strong>Kabrodomas:</strong> Ballistic helmet referenced in cycle.</li>
+        <li><strong>SanJAY:</strong> Battlefield surveillance system; HawkEye-360 sensor acquisition from USA referenced separately.</li>
+      </ul>
+
+      <h3>Quick check</h3>
+      <div class="question" data-qid="d1">
+        <p>Which facility location is paired correctly?</p>
+        <div class="choices">
+          <label><input type="radio" name="d1" /> BrahMos — Hyderabad</label>
+          <label><input type="radio" name="d1" data-correct="true" /> Safran engine — Hyderabad</label>
+          <label><input type="radio" name="d1" /> Volcano 155mm — Lucknow</label>
+          <label><input type="radio" name="d1" /> PRV — Only France</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">BrahMos facility: Lucknow; Safran: Hyderabad; Volcano 155mm: Ratnagiri; PRV is with Norway collaboration.</div>
+      </div>
+      
+      <div class="question" data-qid="d2">
+        <p>Fill in: <span class="hl">____</span> Cub is a portable medical system gifted to the Maldives.</p>
+        <div class="row">
+          <input type="text" placeholder="Your answer" data-answer="Bhishma|Bhishma Cub|BhishmaCube|Bhishma cube" />
+          <button class="check-fill">Check</button>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">Remember Maldives also conducts Ekuverin with India—these often link in exams.</div>
+      </div>
+      
+      <div class="question" data-qid="d3">
+        <p>"Kavach" in Indian Railways is a(n):</p>
+        <div class="choices">
+          <label><input type="radio" name="d3" data-correct="true" /> Automatic Train Protection (ATP) system</label>
+          <label><input type="radio" name="d3" /> Naval decoy launcher</label>
+          <label><input type="radio" name="d3" /> Battlefield radio</label>
+          <label><input type="radio" name="d3" /> Drone jammer</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">Do not confuse with "Kavacham," a weather forecasting system in Wayanad, Kerala.</div>
+      </div>
+    </section>
+
+    <!-- MISSILES SECTION -->
+    <section class="card">
+      <h2>Missiles and export partners</h2>
+      <div class="grid cols-2">
+        <div>
+          <h3>Air defence and air-to-air</h3>
+          <ul>
+            <li><strong>Akash:</strong> Exported to Armenia; Philippines also interested.</li>
+            <li><strong>Astra Mk-II "Gandhiv":</strong> Air-to-air BVR missile; extended range.</li>
+          </ul>
+          
+          <h3>Surface strike</h3>
+          <ul>
+            <li><strong>Pralay:</strong> Surface-to-surface; Armenia buyer interest.</li>
+            <li><strong>Club-S:</strong> Procured from Russia to enhance naval punch.</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3>BrahMos exports</h3>
+          <ul>
+            <li><strong>Philippines:</strong> Contract concluded; training ongoing.</li>
+            <li><strong>Interest signalled:</strong> Vietnam and Indonesia; Armenia explored options.</li>
+            <li><strong>State-of-the-art test range:</strong> New complex in Andhra Pradesh bolsters indigenous testing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Quick check</h3>
+      <div class="question" data-qid="m1">
+        <p>Which country has a concluded BrahMos contract with India?</p>
+        <div class="choices">
+          <label><input type="radio" name="m1" /> Armenia</label>
+          <label><input type="radio" name="m1" data-correct="true" /> Philippines</label>
+          <label><input type="radio" name="m1" /> Vietnam</label>
+          <label><input type="radio" name="m1" /> Indonesia</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">Vietnam and Indonesia have shown interest; the Philippines has signed a contract.</div>
+      </div>
+      
+      <div class="question" data-qid="m2">
+        <p>"Gandhiv" refers to which missile system?</p>
+        <div class="choices">
+          <label><input type="radio" name="m2" data-correct="true" /> Astra Mk-II air-to-air</label>
+          <label><input type="radio" name="m2" /> Pralay surface-to-surface</label>
+          <label><input type="radio" name="m2" /> Akash SAM</label>
+          <label><input type="radio" name="m2" /> BrahMos anti-ship</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">"Gandhiv" is the nickname highlighted for Astra Mk-II in this cycle's prep.</div>
+      </div>
+      
+      <div class="question" data-qid="m3">
+        <p>Fill in: The new state-of-the-art missile test range highlighted in this cycle is in <span class="hl">____</span>.</p>
+        <div class="row">
+          <input type="text" placeholder="State name" data-answer="Andhra Pradesh|AP" />
+          <button class="check-fill">Check</button>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">Andhra Pradesh's coastal geography and range safety corridors support instrumented missile tests.</div>
+      </div>
+    </section>
+
+    <!-- SMART TRAPS SECTION -->
+    <section class="card">
+      <h2>Smart traps and cross-links</h2>
+      <ul>
+        <li><strong>Akash vs. Pralay:</strong> Akash is air defence (SAM); Pralay is surface-to-surface ballistic.</li>
+        <li><strong>SLINEX vs. SIMBEX:</strong> SLINEX (Sri Lanka), SIMBEX (Singapore).</li>
+        <li><strong>Varuna vs. Shakti:</strong> Both with France — Varuna (naval), Shakti (army).</li>
+        <li><strong>Kavach vs. Kavacham:</strong> Rail ATP vs. weather forecasting (Wayanad).</li>
+        <li><strong>Tiger cluster:</strong> US-linked; Tiger Triumph is tri-service amphibious cooperation with the USA.</li>
+      </ul>
+
+      <h3>Final check</h3>
+      <div class="question" data-qid="f1">
+        <p>Match each correctly:</p>
+        <div class="choices">
+          <label><input type="radio" name="f1" data-correct="true" /> SLINEX — Sri Lanka; SIMBEX — Singapore</label>
+          <label><input type="radio" name="f1" /> SLINEX — Singapore; SIMBEX — Sri Lanka</label>
+          <label><input type="radio" name="f1" /> Both are with Singapore</label>
+          <label><input type="radio" name="f1" /> Both are with Sri Lanka</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">Remember "S" in SLINEX for Sri Lanka; SIMBEX is Singapore.</div>
+      </div>
+      
+      <div class="question" data-qid="f2">
+        <p>INS Guldar was:</p>
+        <div class="choices">
+          <label><input type="radio" name="f2" data-correct="true" /> Decommissioned and referenced for an underwater museum concept</label>
+          <label><input type="radio" name="f2" /> Commissioned into P-17A</label>
+          <label><input type="radio" name="f2" /> Transferred to Bangladesh Navy</label>
+          <label><input type="radio" name="f2" /> Refitted as a survey vessel</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">Link it to the museum-concept cue; it's a favourite statement-type distractor.</div>
+      </div>
+      
+      <div class="question" data-qid="f3">
+        <p>Fill in: The container megaship visiting Vizhinjam port was <span class="hl">____</span>.</p>
+        <div class="row">
+          <input type="text" placeholder="Ship name" data-answer="MSC Irina|Irina" />
+          <button class="check-fill">Check</button>
+        </div>
+        <div class="feedback"></div>
+        <div class="explain">Vizhinjam (Kerala) has been in the news for megaship calls and transshipment potential.</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    If this Part 1 page looks good, send the content for Part 2 and I'll produce the next HTML page with the same navigation and interactive questions.
+  </footer>
+
+  <script>
+    // ===== UTILITY FUNCTIONS =====
+    function normalizeString(str) {
+      return str.toLowerCase().replace(/\s+/g, ' ').trim();
+    }
+    
+    function showExplanation(questionElement) {
+      const explanation = questionElement.querySelector('.explain');
+      if (explanation) {
+        explanation.style.display = 'block';
+      }
+    }
+    
+    // ===== RADIO BUTTON (MCQ) HANDLER =====
+    document.querySelectorAll('.question').forEach(question => {
+      const radioButtons = question.querySelectorAll('input[type="radio"]');
+      const feedbackElement = question.querySelector('.feedback');
+      
+      radioButtons.forEach(radio => {
+        radio.addEventListener('change', () => {
+          const correctAnswer = question.querySelector('input[type="radio"][data-correct="true"]');
+          const correctLabel = correctAnswer ? correctAnswer.parentElement.textContent.trim() : '';
+          
+          if (radio.hasAttribute('data-correct')) {
+            feedbackElement.textContent = 'Correct ✔';
+            feedbackElement.className = 'feedback ok';
+          } else {
+            feedbackElement.innerHTML = 'Incorrect ✖ — Correct answer: ' + (correctLabel || 'Shown above');
+            feedbackElement.className = 'feedback bad';
+          }
+          
+          showExplanation(question);
+        });
+      });
+    });
+    
+    // ===== FILL-IN-THE-BLANK HANDLER =====
+    document.querySelectorAll('.check-fill').forEach(button => {
+      button.addEventListener('click', () => {
+        const row = button.closest('.row');
+        const question = button.closest('.question');
+        const feedbackElement = question.querySelector('.feedback');
+        const inputFields = row.querySelectorAll('input[type="text"]');
+        
+        let allAnswersCorrect = true;
+        let correctAnswersList = [];
+        
+        inputFields.forEach(input => {
+          const acceptableAnswers = (input.getAttribute('data-answer') || '')
+            .split('|')
+            .map(answer => normalizeString(answer));
+            
+          correctAnswersList.push(acceptableAnswers[0] || '');
+          
+          const userAnswer = normalizeString(input.value || '');
+          
+          if (!acceptableAnswers.includes(userAnswer)) {
+            allAnswersCorrect = false;
+          }
+        });
+        
+        if (allAnswersCorrect) {
+          feedbackElement.textContent = 'Correct ✔';
+          feedbackElement.className = 'feedback ok';
+        } else {
+          feedbackElement.innerHTML = 'Incorrect ✖ — Correct answer: ' + correctAnswersList.join(' ; ');
+          feedbackElement.className = 'feedback bad';
+        }
+        
+        showExplanation(question);
+      });
+    });
+  </script>
+</body>
+</html>
